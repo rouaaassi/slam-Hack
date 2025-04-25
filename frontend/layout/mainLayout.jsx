@@ -1,20 +1,17 @@
 import React from 'react';
-import NavBar from '../src/compenets/nav/navbar'
+import { Outlet } from 'react-router-dom';
+import Navbar from '../src/compenets/nav/navbar'; 
+import Footer from '../src/pages/footer';
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
   return (
-    <div>
-      <header>
-       <NavBar/>
-      </header>
-
+    <>
+      <Navbar />
       <main>
-        {children}
+        <Outlet />
       </main>
-
-      {/* <footer>
-      </footer> */}
-    </div>
+      <Footer />
+    </>
   );
 };
 

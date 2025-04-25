@@ -147,7 +147,7 @@ export default function SignUp() {
               backgroundColor: '#C7CB36',
               color: 'white',
               '&:hover': {
-                backgroundColor: '#B0B536', // لون أغمق قليلاً عند التحويم
+                backgroundColor: '#B0B536',
               },
               transition: 'background-color 0.3s ease',
             }}
@@ -161,7 +161,7 @@ export default function SignUp() {
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           <Typography sx={{ textAlign: 'center' }}>
             Already have an account?{' '}
-            <Link href="/material-ui/getting-started/templates/sign-in/">
+            <Link href="/login">
               Sign in
             </Link>
           </Typography>
